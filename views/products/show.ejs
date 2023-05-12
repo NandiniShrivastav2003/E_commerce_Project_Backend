@@ -8,24 +8,24 @@
         <div class="col-lg-6">
           
             <div class="card shadow-sm mx-auto" style="width: 22rem;">
-                <img src="<%=product.img%>" class="card-img-top" alt="item image">
+                <!-- <img src="<%=product.img%>" class="card-img-top" alt="item image"> -->
                 <div class="card-body">
                 <h5 class="card-title"><%= product.name %> </h5>
                 <p class="card-text"><%= product.desc %></p>
-                <h5 class="card-title">$ <%= product.price %> </h5>
-                <a href="#" class="btn btn-success btn-sm">Buy</a>
+                <!-- <h5 class="card-title">$ <%= product.price %> </h5> -->
+                <!-- <a href="#" class="btn btn-success btn-sm"></a> -->
                 
                 <form class="d-inline-block" action="/user/<%=product._id%>/add" method="post">
-                    <button type="submit" class="btn btn-secondary btn-sm">Add To Cart</button>
+                    <button type="submit" class="btn btn-secondary btn-sm">Comment</button>
                 </form>
                
                     
-                <% if(currentUser && currentUser.role ==='seller') {%>
+                <!-- <% if(currentUser && currentUser.role ==='seller') {%> -->
                     <a href="/products/<%=product._id%>/edit" class="btn btn-info btn-sm">Edit</a>
                     <form class="d-inline-block" action="/products/<%=product._id%>?_method=DELETE" method="POST">
                         <button class="btn btn-sm btn-danger">Delete</button>
                     </form>
-                <% } %> 
+                <!-- <% } %>  -->
                 
             </div>
             </div>

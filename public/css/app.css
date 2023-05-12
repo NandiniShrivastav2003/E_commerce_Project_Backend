@@ -9,8 +9,8 @@ main{
 
 
 .products .card img{
-    height: 210px;
-    padding: 10px;
+    width: 49px;
+    border-radius: 50%;
 }
 
 .show-btn{

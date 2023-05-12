@@ -25,7 +25,7 @@ mongoose.connect('mongodb://localhost:27017/shopping-app')
     .then(() => console.log('DB Connected'))
     .catch((err) => console.log(err));
 
-
+  
 app.engine('ejs', ejsMate);
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
