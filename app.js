@@ -21,7 +21,7 @@ const cartRoutes = require('./routes/cart');
 const productApis = require('./routes/api/productapi');
 
 
-mongoose.connect('mongodb://localhost:27017/shopping-app')
+mongoose.connect('mongodb://0.0.0.0:27017/shopping-app')
     .then(() => console.log('DB Connected'))
     .catch((err) => console.log(err));
 
